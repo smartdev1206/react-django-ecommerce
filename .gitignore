@@ -1,0 +1,14 @@
+
+.env
+__pycache__
+
+venv/
+node_modules
+
+build
+/static
+/media
+
+package-lock.json
+.idea/
+find . -type d -name '__pycache__' -print0 | xargs -0 git rm --cached -r --
